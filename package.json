@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MuhammadMabrouk/jquery.hijri.date.git"
+    "url": "git+https://github.com/MuhammadMabrouk/jquery-hijri-date.git"
   },
   "keywords": [
     "jquery",
@@ -20,7 +20,7 @@
   "author": "Muhammad Mabrouk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MuhammadMabrouk/jquery.hijri.date/issues"
+    "url": "https://github.com/MuhammadMabrouk/jquery-hijri-date/issues"
   },
-  "homepage": "https://github.com/MuhammadMabrouk/jquery.hijri.date#readme"
+  "homepage": "https://github.com/MuhammadMabrouk/jquery-hijri-date#readme"
 }
