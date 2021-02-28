@@ -26,19 +26,44 @@ or
 <div class="my-date"></div>
 ```
 
+<br>
+
+**1- Default:**
 ```javascript
 $('.my-date').hijriDate();
 ```
 
-![alt text](https://drive.google.com/uc?export=view&id=1acAq1lCl4q2e1rvGAxkdVonKLi5Nh4G7 "Hijri Date Only")
+![alt text](https://drive.google.com/uc?export=view&id=1ZrjM9_FlGJeP2mUpKjm0-cr64JNsKC0a "Hijri Date Default")
 
-If you want to display the Gregorian date as well, pass `{gregorian: true}` as follows:
+### Options:
+| Prop | Type | Description | Default |
+| ----------- |    :----:   | ----------- |    :----:   |
+| showWeekDay | `boolean` | Set to `true` or `false` to show or hide the day of the week. | `true` |
+| showGregDate | `boolean` | Set to `true` or `false` to show or hide the Gregorian date. | `false` |
+| separator | `string` | The separator symbol that appears between the Hijri and Gregorian dates. | `'-'` |
+| weekDayLang | `'ar'` &#124; `'en'` | Determine the language for printing the day of the week. | `'ar'` |
+| hijriLang | `'ar'` &#124; `'en'` | Determine the language for printing the Hijri date. | `'ar'` |
+| gregLang | `'ar'` &#124; `'en'` | Determine the language for printing the Gregorian date. | `'ar'` |
 
+<br>
+
+**2- Customized:**
 ```javascript
-$('.my-date').hijriDate({gregorian: true});
+$('.my-date').hijriDate({
+  showWeekDay: true,
+  showGregDate: true,
+  separator: '&nbsp;|&nbsp;',
+  weekDayLang: 'en',
+  hijriLang: 'en',
+  gregLang: 'en'
+});
 ```
 
-![alt text](https://drive.google.com/uc?export=view&id=18AWj3ZtZ6c56mN9yqkx2zAjJss1sWvjv "Hijri and Gregorian Date")
+<br>
+
+![alt text](https://drive.google.com/uc?export=view&id=1dcGBZ3ku06dugh0Qj4RkBaaIBpAdlHG_ "Customized")
+
+<br><br>
 
 ### License
 
