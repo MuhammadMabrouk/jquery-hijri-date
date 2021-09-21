@@ -1,6 +1,6 @@
 {
   "name": "jquery-hijri-date",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small jQuery plugin to display Hijri date",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

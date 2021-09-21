@@ -11,7 +11,8 @@ $.fn.hijriDate = function (options = {}) {
     separator: (options.separator && typeof options.separator === 'string') ? options.separator : '-',
     weekDayLang: (options.weekDayLang && typeof options.weekDayLang === 'string') ? options.weekDayLang : 'ar',
     hijriLang: (options.hijriLang && typeof options.hijriLang === 'string') ? options.hijriLang : 'ar',
-    gregLang: (options.gregLang && typeof options.gregLang === 'string') ? options.gregLang : 'ar'
+    gregLang: (options.gregLang && typeof options.gregLang === 'string') ? options.gregLang : 'ar',
+    correction: (options.correction && typeof options.correction === 'number') ? options.correction : 0,
   };
   const $hostEl = this;
   const today = new Date();
@@ -49,7 +50,7 @@ $.fn.hijriDate = function (options = {}) {
       e = -1;
     } else { e = -2; }
 
-    return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+    return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + (day + defaultOptions.correction);
   }
 
   function Hijri(year, month, day) {

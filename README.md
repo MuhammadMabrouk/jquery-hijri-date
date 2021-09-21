@@ -44,6 +44,7 @@ $('.my-date').hijriDate();
 | weekDayLang | `'ar'` &#124; `'en'` | Determine the language for printing the day of the week. | `'ar'` |
 | hijriLang | `'ar'` &#124; `'en'` | Determine the language for printing the Hijri date. | `'ar'` |
 | gregLang | `'ar'` &#124; `'en'` | Determine the language for printing the Gregorian date. | `'ar'` |
+| correction | `number` | Add or subtract one or more days until you get the correct date. | `0` |
 
 <br>
 
@@ -55,7 +56,8 @@ $('.my-date').hijriDate({
   separator: '&nbsp;|&nbsp;',
   weekDayLang: 'en',
   hijriLang: 'en',
-  gregLang: 'en'
+  gregLang: 'en',
+  correction: +1
 });
 ```
 
